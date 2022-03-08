@@ -38,8 +38,10 @@ public class OrderService {
 		 orderRepo.deleteById(oid);
 	}
 	
-	public void returnOrder(String oid, String status) {
-		OrderSystem o = orderRepo.findByOid(oid).get(0);
-		o.setStatus(status);
+	public OrderSystem returnOrder(String oid, OrderSystem order) {
+		OrderSystem o = orderRepo.findById(oid).get();
+		o.setStatus(order.getOid());
+		o.setStatus(order.getStatus());
+		return orderRepo.save(o);
 	}
 }
