@@ -1,6 +1,8 @@
 package ecommerceordersystem.exception;
 
-public class OrderNotFoundException extends RuntimeException{
+import java.util.NoSuchElementException;
+
+public class OrderNotFoundException extends NoSuchElementException{
 	private String message;
 
 	public String getMessage() {
