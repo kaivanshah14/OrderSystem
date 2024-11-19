@@ -1,4 +1,4 @@
-# OrderSystem
+# Order Management System
 
 Order Management System was a dummy project I built during my internship as a Software Development Intern at [NetMeds.com](https://www.netmeds.com/)
 
